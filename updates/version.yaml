@@ -27,3 +27,6 @@
 "2.1.2":
     - "Add example of tags in relation mode for hasMany/morphMany relation types"
     - v2.1.2/add_tags_foreign_keys.php
+"2.1.3":
+    - 'Create Events Table'
+    - v2.1.3/create_events_table.php

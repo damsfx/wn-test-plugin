@@ -26,6 +26,10 @@ return [
             'label' => 'Country',
             'label_plural' => 'Countries',
         ],
+        'event' => [
+            'label' => 'Event',
+            'label_plural' => 'Events',
+        ],
         'gallery' => [
             'label' => 'Gallery',
             'label_plural' => 'Galleries',
