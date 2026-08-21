@@ -271,6 +271,40 @@ secondaryTabs:
             commentAbove: Demonstration of a <a href="https://wintercms.com/docs/backend/forms/#widget-taglist" target="_blank"><code>taglist</code></a> FormWidget
             commentHtml: true
 
+        _section_fieldset:
+            tab: FormWidgets
+            label: Grouping
+            commentAbove: FormWidgets that visually group other fields together
+            type: section
+            span: full
+        contact_details:
+            tab: FormWidgets
+            label: Contact Details
+            type: fieldset
+            span: full
+            commentAbove: Demonstration of a <a href="https://wintercms.com/docs/backend/forms/#widget-fieldset" target="_blank"><code>fieldset</code></a> FormWidget. The grouped fields below are wrapped in a <code>&lt;fieldset&gt;</code> (the label becomes the legend) but are saved to the model as if they were defined at the top level.
+            commentHtml: true
+            fields:
+                additional_data[formwidgets][fieldset][first_name]:
+                    label: First Name
+                    type: text
+                    span: left
+                additional_data[formwidgets][fieldset][last_name]:
+                    label: Last Name
+                    type: text
+                    span: right
+                additional_data[formwidgets][fieldset][age]:
+                    label: Age
+                    type: number
+                    span: left
+                    comment: Saved as a numeric value
+                additional_data[formwidgets][fieldset][birthday]:
+                    label: Birthday
+                    type: datepicker
+                    mode: date
+                    span: right
+                    comment: A nested FormWidget — its own getSaveValue() is applied
+
         _section_pickers:
             tab: FormWidgets
             label: '"Picker" widgets'
