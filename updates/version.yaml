@@ -27,3 +27,6 @@
 "2.1.2":
     - "Add example of tags in relation mode for hasMany/morphMany relation types"
     - v2.1.2/add_tags_foreign_keys.php
+"3.0.0":
+    - "Require Winter v1.2.8 as a minimum and adopt the backend behaviour default views, dropping the controller view files the plugin used to ship"
+    - "Add FieldSet, URL and sensitive formwidget examples to the Records section"
